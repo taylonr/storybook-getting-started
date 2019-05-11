@@ -1,4 +1,5 @@
-import { configure } from '@storybook/react';
+import { addParameters, configure } from '@storybook/react';
+import crfTheme from './crfTheme';
 
 import "../bootstrap-reboot.min.css"
 import "../bootstrap.css"
@@ -10,5 +11,11 @@ const req = require.context('../stories', true, /\.stories\.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
+
+addParameters({
+  options: {
+    theme: crfTheme
+  }
+})
 
 configure(loadStories, module);
