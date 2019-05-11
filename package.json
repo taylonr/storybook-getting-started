@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix ./",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./Images -p 6006",
     "build-storybook": "build-storybook"
   },
   "author": "",
