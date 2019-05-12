@@ -1,4 +1,5 @@
-import { addParameters, configure } from '@storybook/react';
+import { addParameters, configure, addDecorator } from '@storybook/react';
+import {withInfo} from '@storybook/addon-info';
 import crfTheme from './crfTheme';
 
 import "../bootstrap-reboot.min.css"
@@ -17,5 +18,9 @@ addParameters({
     theme: crfTheme
   }
 })
+
+addDecorator(withInfo({
+  inline: true
+}));
 
 configure(loadStories, module);
