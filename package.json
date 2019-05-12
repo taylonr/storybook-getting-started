@@ -9,12 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "babel-loader": "^8.0.5"
+    "@babel/core": "7.4.3",
+    "babel-loader": "8.0.5"
   },
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@storybook/addon-info": "5.0.11",
+    "@storybook/addon-knobs": "5.0.11",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   }
 }
