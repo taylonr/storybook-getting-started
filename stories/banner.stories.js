@@ -3,8 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import MajorBanner from '../components/major.banner';
 import MinorBanner from '../components/minor.banner';
+import withSeeAlso from '../seeAlso/index';
 
 storiesOf('Components | Banners/Major', module)
+  .addDecorator(withSeeAlso)
   .addParameters({
     info: {
       text: `
@@ -18,6 +20,7 @@ storiesOf('Components | Banners/Major', module)
         **See Also:** Minor Banner
       `,
     },
+    seeAlso: { story: 'Components | Banners/Minor', label: 'Minor Banners' },
   })
   .add('With Only Title', () => (
     <MajorBanner title="Banner Title" photo="People Outdoors/shutterstock_116403520.jpg" />
