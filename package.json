@@ -1,0 +1,29 @@
+{
+    "name": "storybook-getting-started",
+    "version": "1.0.0",
+    "description": "Hands-on practice from Pluralsight course",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "start-storybook"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TerrenceMM2/storybook-getting-started.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TerrenceMM2/storybook-getting-started/issues"
+    },
+    "homepage": "https://github.com/TerrenceMM2/storybook-getting-started#readme",
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.17",
+        "@storybook/react": "^6.1.18",
+        "babel-loader": "^8.2.2"
+    }
+}
